@@ -10,7 +10,7 @@ return array(
 	| Set this to the directory of the theme you want active. No slashes.
 	|
 	*/
-	'theme' => '##theme##',
+	'theme' => 'simple',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -50,5 +50,5 @@ return array(
 	| Checks if this is installed in wardrobe/wardrobe
 	|
 	*/
-	'in_framework' => '',
+	'in_framework' => true,
 );
