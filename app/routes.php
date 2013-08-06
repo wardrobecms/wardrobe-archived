@@ -21,5 +21,3 @@ Route::group(array('prefix' => 'install'), function()
 
 	Route::get('config', array('uses' => 'InstallController@editConfig', 'as' => 'wardrobe.install.editConfig'));
 });
-
-Route::controller('install', 'InstallController');

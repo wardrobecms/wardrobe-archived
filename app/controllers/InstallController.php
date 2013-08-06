@@ -22,7 +22,7 @@ class InstallController extends Controller {
 	public function __construct(UserRepositoryInterface $users)
 	{
 		// If the config is marked as installed then bail with a 404.
-		if (Config::get("wardrobe.installed") === true)
+		if (Config::get("core::wardrobe.installed") === true)
 		{
 			return App::abort(404, 'Page not found');
 		}

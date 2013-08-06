@@ -5,7 +5,19 @@
             "url": "https://github.com/wardrobecms/core"
 		}
 	],
-	"name": "laravel/laravel",
+	"authors": [
+        {
+            "name": "Eric L Barnes",
+            "email": "eric@ericlbarnes.com",
+            "role": "Developer"
+        },
+        {
+            "name": "Ryan Tablada",
+            "email": "ryan.tablada@gmail.com",
+            "role": "Developer"
+        }
+    ],
+	"name": "wardrobe/wardrobe",
 	"description": "The Laravel Framework.",
 	"keywords": ["framework", "laravel"],
 	"require": {
