@@ -16,6 +16,9 @@
     </div>
     @endif
     <form method="post" style="text-align: center;" action="{{ url('install') }}" class="form-horizontal">
+      <p>
+        Please configure your database within "app/config/database.php"
+      </p>
       <button style="text-align: center;" type="submit" class="btn save">Install Database &amp; Continue</button>
     </form>
   </div>

@@ -34,8 +34,7 @@
 		],
 		"post-create-project-cmd": [
 			"php artisan key:generate",
-			"php artisan asset:publish wardrobe/core",
-			"php artisan config:publish wardrobe/core"
+			"php artisan asset:publish wardrobe/core"
 		]
 	},
 	"config": {

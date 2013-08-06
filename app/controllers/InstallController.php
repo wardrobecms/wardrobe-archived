@@ -35,7 +35,7 @@ class InstallController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getIndex()
+	public function start()
 	{
 		return View::make('admin.installer.step1');
 	}
@@ -45,11 +45,26 @@ class InstallController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function postIndex()
+	public function publishAndMigrate()
 	{
-		Artisan::call('key:generate', array('--env' => App::environment()));
+		$artisan = Artisan::call(
+			'migrate',
+			array(
+				'--env' => App::environment(),
+				'--database' => 'wardrobe',
+				'--package' => 'wardrobe/core'
+			)
+		);
 
-		$artisan = Artisan::call('migrate', array('--env' => App::environment()));
+		Artisan::call(
+			'config:publish',
+			array('package' => 'wardrobe/core')
+		);
+
+		Artisan::call(
+			'asset:publish',
+			array('package' => 'wardrobe/core')
+		);
 
 		if ($artisan > 0)
 		{
@@ -66,7 +81,7 @@ class InstallController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function getUser()
+	public function createUser()
 	{
 		return View::make('admin.installer.user');
 	}
@@ -76,7 +91,7 @@ class InstallController extends Controller {
 	 *
 	 * @return Response
 	 */
-	public function postUser()
+	public function storeUser()
 	{
 		$messages = $this->users->validForCreation(
 			Input::get('first_name'),
@@ -106,7 +121,7 @@ class InstallController extends Controller {
 	/**
 	 * Get the config form.
 	 */
-	public function getConfig()
+	public function editConfig()
 	{
 		return View::make('admin.installer.config');
 	}
@@ -155,11 +170,11 @@ class InstallController extends Controller {
 	 */
 	protected function getConfigFile($file)
 	{
-		if (file_exists(app_path().'/config/'.App::environment().'/'.$file))
+		if (file_exists(app_path().'/config/packages/wardrobe/core/'.App::environment().'/'.$file))
 		{
-			return app_path().'/config/'.App::environment().'/'.$file;
+			return app_path().'/config/packages/wardrobe/core/'.App::environment().'/'.$file;
 		}
 
-		return app_path().'/config/'.$file;
+		return app_path().'/config/packages/wardrobe/core/'.$file;
 	}
 }
