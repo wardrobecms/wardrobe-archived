@@ -1,10 +1,4 @@
 {
-	"repositories": [
-		{
-			"type": "vcs",
-            "url": "https://github.com/wardrobecms/core"
-		}
-	],
 	"authors": [
         {
             "name": "Eric L Barnes",
