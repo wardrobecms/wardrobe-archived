@@ -57,11 +57,6 @@ class InstallController extends Controller {
 		);
 
 		Artisan::call(
-			'config:publish',
-			array('package' => 'wardrobe/core')
-		);
-
-		Artisan::call(
 			'asset:publish',
 			array('package' => 'wardrobe/core')
 		);
