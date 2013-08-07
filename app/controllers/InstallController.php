@@ -124,7 +124,7 @@ class InstallController extends Controller {
 	/**
 	 * Save the config files
 	 */
-	public function postConfig()
+	public function updateConfig()
 	{
 		$this->setWardrobeConfig(
 			Input::get('title', 'Site Name'),
