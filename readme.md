@@ -17,6 +17,6 @@ In the browser you will be directed to the guided install process which will:
 
 Theming Wardrobe
 ---------------------------------------
-By default, your theme files are located in `public/themes'.
+By default, your theme files are located in `public/themes`.
 You can modify these themes or create your own using the default themes as a guide.
 The configuration for your themes is located in `app/config/packages/wardrobe/core/wardrobe.php` in the `theme` option.
