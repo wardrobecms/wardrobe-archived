@@ -1,6 +1,11 @@
-## Wardrobe CMS
+## Wardrobe
 
 [![Latest Stable Version](https://poser.pugx.org/wardrobe/wardrobe/version.png)](https://packagist.org/packages/wardrobe/wardrobe) [![Total Downloads](https://poser.pugx.org/wardrobe/wardrobe/d/total.png)](https://packagist.org/packages/wardrobe/wardrobe)
+
+Wardrobe is designed to be a very minimal blogging platform with the primary focus on writing. Currently it is a work in progress but you are free to give it a try. (Just be warned this alpha/beta quality). If you have any issues or ideas please report them.
+
+![Wardobe](http://wardrobecms.com/media/wardrobe-air-large.png)
+
 
 Installing Wardrobe
 ---------------------------------------
