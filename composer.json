@@ -16,7 +16,7 @@
 	"keywords": ["framework", "laravel"],
 	"require": {
 		"laravel/framework": "4.0.*",
-		"wardrobe/core": "dev-master"
+		"wardrobe/core": "1.0.*"
 	},
 	"autoload": {
 		"classmap": [
