@@ -1,16 +1,16 @@
 {
   "authors": [
-        {
-            "name": "Eric L Barnes",
-            "email": "eric@ericlbarnes.com",
-            "role": "Developer"
-        },
-        {
-            "name": "Ryan Tablada",
-            "email": "ryan.tablada@gmail.com",
-            "role": "Developer"
-        }
-    ],
+    {
+      "name": "Eric L Barnes",
+      "email": "eric@ericlbarnes.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Ryan Tablada",
+      "email": "ryan.tablada@gmail.com",
+      "role": "Developer"
+    }
+  ],
   "name": "wardrobe/wardrobe",
   "description": "A minimal blog application.",
   "keywords": ["blog", "cms", "laravel", "wardrobe"],
@@ -37,7 +37,7 @@
     ],
     "post-update-cmd": [
       "php artisan optimize",
-          "php artisan asset:publish wardrobe/core"
+      "php artisan asset:publish wardrobe/core"
     ],
     "post-create-project-cmd": [
       "php artisan key:generate",
