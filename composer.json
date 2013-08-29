@@ -1,5 +1,5 @@
 {
-	"authors": [
+  "authors": [
         {
             "name": "Eric L Barnes",
             "email": "eric@ericlbarnes.com",
@@ -11,43 +11,43 @@
             "role": "Developer"
         }
     ],
-	"name": "wardrobe/wardrobe",
-	"description": "The Laravel Framework.",
-	"keywords": ["framework", "laravel"],
-	"require": {
-		"laravel/framework": "4.0.*",
-		"wardrobe/core": "1.0.*"
-	},
-	"autoload": {
-		"classmap": [
-			"app/commands",
-			"app/controllers",
-			"app/models",
-			"app/database/migrations",
-			"app/database/seeds",
-			"app/tests/TestCase.php"
-		]
-	},
-	"scripts": {
-		"post-install-cmd": [
-			"php artisan optimize"
-		],
-		"pre-update-cmd": [
-			"php artisan clear-compiled"
-		],
-		"post-update-cmd": [
-			"php artisan optimize",
-      		"php artisan asset:publish wardrobe/core"
-		],
-		"post-create-project-cmd": [
-			"php artisan key:generate",
-			"php artisan asset:publish wardrobe/core",
-			"php artisan wardrobe:themes"
-		]
-	},
-	"config": {
-		"preferred-install": "dist"
-	},
-	"minimum-stability": "dev",
-	"license": "MIT"
+  "name": "wardrobe/wardrobe",
+  "description": "A minimal blog application.",
+  "keywords": ["blog", "cms", "laravel", "wardrobe"],
+  "require": {
+    "laravel/framework": "4.0.*",
+    "wardrobe/core": "1.0.*"
+  },
+  "autoload": {
+    "classmap": [
+      "app/commands",
+      "app/controllers",
+      "app/models",
+      "app/database/migrations",
+      "app/database/seeds",
+      "app/tests/TestCase.php"
+    ]
+  },
+  "scripts": {
+    "post-install-cmd": [
+      "php artisan optimize"
+    ],
+    "pre-update-cmd": [
+      "php artisan clear-compiled"
+    ],
+    "post-update-cmd": [
+      "php artisan optimize",
+          "php artisan asset:publish wardrobe/core"
+    ],
+    "post-create-project-cmd": [
+      "php artisan key:generate",
+      "php artisan asset:publish wardrobe/core",
+      "php artisan wardrobe:themes"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "minimum-stability": "dev",
+  "license": "MIT"
 }
