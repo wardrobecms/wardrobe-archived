@@ -21,6 +21,9 @@ class InstallController extends Controller {
 	 */
 	public function __construct(UserRepositoryInterface $users)
 	{
+		$presence = Validator::getPresenceVerifier();
+		$presence->setConnection('wardrobe');
+
 		// If the config is marked as installed then bail with a 404.
 		if (Config::get("core::wardrobe.installed") === true)
 		{
