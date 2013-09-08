@@ -30,8 +30,7 @@
   },
   "scripts": {
     "post-install-cmd": [
-      "php artisan optimize",
-      "php artisan wardrobe:themes"
+      "php artisan optimize"
     ],
     "pre-update-cmd": [
       "php artisan clear-compiled"
