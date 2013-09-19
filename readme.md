@@ -7,6 +7,15 @@ Wardrobe is designed to be a very minimal blogging platform with the primary foc
 ![Wardobe](http://wardrobecms.com/media/wardrobe-air-large.png)
 
 
+Requirements
+---------------------------------------
+
+Wardrobe has a few system requirements:
+
+- PHP >= 5.3.7
+- MCrypt PHP Extension
+- PDO compliant database (SQL, MySQL, PostgreSQL, SQLite)
+
 Installing Wardrobe
 ---------------------------------------
 
