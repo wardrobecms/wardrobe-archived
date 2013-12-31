@@ -15,7 +15,7 @@
   "description": "A minimal blog application.",
   "keywords": ["blog", "cms", "laravel", "wardrobe"],
   "require": {
-    "laravel/framework": "4.0.*",
+    "laravel/framework": "4.1.*",
     "wardrobe/core": "1.1.*"
   },
   "autoload": {
