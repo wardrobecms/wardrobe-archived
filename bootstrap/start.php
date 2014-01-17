@@ -13,15 +13,13 @@
 
 $app = new Illuminate\Foundation\Application;
 
-$app->redirectIfTrailingSlash();
-
 /*
 |--------------------------------------------------------------------------
 | Detect The Application Environment
 |--------------------------------------------------------------------------
 |
 | Laravel takes a dead simple approach to your application environments
-| so you can just specify a machine name or HTTP host that matches a
+| so you can just specify a machine name for the host that matches a
 | given environment, then we will automatically detect it for you.
 |
 */
@@ -29,7 +27,6 @@ $app->redirectIfTrailingSlash();
 $env = $app->detectEnvironment(array(
 
 	'local' => array('your-machine-name'),
-	'dev' => array('wardrobe-core.dev'),
 
 ));
 
@@ -51,7 +48,7 @@ $app->bindInstallPaths(require __DIR__.'/paths.php');
 | Load The Application
 |--------------------------------------------------------------------------
 |
-| Here we will load the Illuminate application. We'll keep this is in a
+| Here we will load this Illuminate application. We will keep this in a
 | separate location so we can isolate the creation of an application
 | from the actual running of the application with a given request.
 |

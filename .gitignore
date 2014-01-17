@@ -1,5 +1,7 @@
 /bootstrap/compiled.php
 /vendor
+/wordkbench
 composer.phar
 composer.lock
 .DS_Store
+Thumbs.db

@@ -22,7 +22,22 @@ return array(
 	| folder.
 	|
 	*/
-	'image_dir' => 'images',
+	'image_dir' => 'img',
+
+	/*
+	|--------------------------------------------------------------------------
+	| Image Resize
+	|--------------------------------------------------------------------------
+	|
+	| If enabled, images will be resized automatically to fit within the
+	| specified width/height (pixels) when uploaded.
+	|
+	*/
+	'image_resize' => array(
+		'enabled'       => false,
+		'width'         => '600',
+		'height'        => '600',
+	),
 
 	/*
 	|--------------------------------------------------------------------------
@@ -33,7 +48,7 @@ return array(
 	| gracefully.
 	|
 	*/
-	'handles_404' => true,
+	'handles_404' => false,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -43,7 +58,7 @@ return array(
 	| Set this to the directory of the theme you want active. No slashes.
 	|
 	*/
-	'theme' => '##theme##',
+	'theme' => 'default',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -53,7 +68,7 @@ return array(
 	| Set this to your sites title
 	|
 	*/
-	'title' => '##title##',
+	'title' => 'Blog',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -63,7 +78,7 @@ return array(
 	| Set this to the number of posts you want per page.
 	|
 	*/
-	'per_page' => '##per_page##',
+	'per_page' => 5,
 
 	/*
 	|--------------------------------------------------------------------------
@@ -73,15 +88,17 @@ return array(
 	| This sets a flag so that it can only be installed once.
 	|
 	*/
-	'installed' => '##installed##',
+	'installed' => true,
 
 	/*
 	|--------------------------------------------------------------------------
-	| In Framework
+	| Enable Cache
 	|--------------------------------------------------------------------------
 	|
-	| Checks if this is installed in wardrobe/wardrobe
+	| Set this to true to enable caching. If true it will then use the
+	| default laravel cache setup.
 	|
 	*/
-	'in_framework' => true
+	'cache' => null,
+
 );
