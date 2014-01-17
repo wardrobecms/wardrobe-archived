@@ -16,7 +16,8 @@
 	},
   "require-dev": {
     "barryvdh/laravel-ide-helper": "1.*",
-    "fzaninotto/faker": "1.x"
+    "fzaninotto/faker": "1.x",
+    "mockery/mockery": "0.8.*"
   },
 	"autoload": {
 		"classmap": [
