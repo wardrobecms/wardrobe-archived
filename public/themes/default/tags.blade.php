@@ -5,6 +5,7 @@
 @stop
 
 @section('content')
+
 	<section>
 		<h2 class="title">Example of All Tags</h2>
 
@@ -15,4 +16,5 @@
 		@endforeach
 
 	</section>
+
 @stop

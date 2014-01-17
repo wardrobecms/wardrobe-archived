@@ -5,10 +5,12 @@
 @stop
 
 @section('content')
+
 	<section>
 		<h2 class="title"></h2>
 		<div class="js-content"></div>
 	</section>
+
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jStorage/0.3.0/jstorage.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/marked/0.2.9/marked.min.js"></script>
@@ -24,5 +26,6 @@
 			});
 		});
 	</script>
+
 @stop
 
