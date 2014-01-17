@@ -5,7 +5,6 @@
 	"license": "MIT",
 	"require": {
 		"laravel/framework": "4.1.*",
-    "itsgoingd/clockwork": "dev-master",
     "wardrobe/cabinet": "dev-master"
 	},
   "require-dev": {
