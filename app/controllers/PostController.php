@@ -45,9 +45,27 @@ class PostController extends BaseController {
 	 */
 	public function getSearch()
 	{
-		$posts = $this->posts->search(Input::get('q'), $this->per_page);
+		$search = strip_tags(Input::get('q'));
 
-		return View::make($this->theme.'.archive', compact('posts', 'search'));
+		$posts = $this->posts->search($search, $this->per_page);
+
+		return View::make($this->theme.'.archive', ['posts' => $posts, 'search' => $search]);
+	}
+
+	/**
+	 * Get a list of results by tag
+	 *
+	 * @param $tag
+	 *
+	 * @return \Illuminate\View\View
+	 */
+	public function getTag($tag)
+	{
+		$data['tag'] = strip_tags($tag);
+
+		$data['posts'] = $this->posts->activeByTag($data['tag'], $this->per_page);
+
+		return View::make($this->theme.'.archive', $data);
 	}
 
 	/**
@@ -83,8 +101,8 @@ class PostController extends BaseController {
 			'updated' => isset($posts[0]) ? $posts[0]->atom_date : date('Y-m-d H:i:s'),
 		);
 
-		return Response::view($this->theme.'.atom', $data, 200, array(
+		return Response::view($this->theme.'.atom', $data, 200, [
 			'Content-Type' => 'application/rss+xml; charset=UTF-8',
-		));
+		]);
 	}
 }
