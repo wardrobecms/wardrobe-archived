@@ -31,3 +31,9 @@ In the browser you will be directed to the guided install process which will:
 By default, your theme files are located in `public/themes`.
 You can modify these themes or create your own using the default themes as a guide.
 The configuration for your themes is located in `app/config/packages/wardrobe/core/wardrobe.php` in the `theme` option.
+
+## Dev Notes
+
+Manually seeding:
+
+    php artisan migrate --seed --package=wardrobe/cabinet

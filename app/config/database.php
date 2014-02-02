@@ -55,9 +55,9 @@ return array(
 		'mysql' => array(
 			'driver'    => 'mysql',
 			'host'      => 'localhost',
-			'database'  => 'wardrobe-dev',
+			'database'  => 'database',
 			'username'  => 'root',
-			'password'  => 'root',
+			'password'  => '',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
@@ -66,7 +66,7 @@ return array(
 		'pgsql' => array(
 			'driver'   => 'pgsql',
 			'host'     => 'localhost',
-			'database' => 'database',
+			'database'  => 'database',
 			'username' => 'root',
 			'password' => '',
 			'charset'  => 'utf8',
