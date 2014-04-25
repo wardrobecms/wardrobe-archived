@@ -28,6 +28,10 @@ In the browser you will be directed to the guided install process which will:
 * Help you create your first user
 * Help you set your site title, theme, and page values
 
+Upgrading Wardrobe
+---------------------------------------
+
+Run `composer update` then `php artisan wardrobe:migrate` to migrate any db tables.
 
 Theming Wardrobe
 ---------------------------------------
