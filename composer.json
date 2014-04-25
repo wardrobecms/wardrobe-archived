@@ -16,7 +16,7 @@
   "keywords": ["blog", "cms", "laravel", "wardrobe"],
   "require": {
     "laravel/framework": "4.1.*",
-    "wardrobe/core": "dev-master"
+    "wardrobe/core": "1.2.*"
   },
   "autoload": {
     "classmap": [
