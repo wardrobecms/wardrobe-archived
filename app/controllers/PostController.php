@@ -105,4 +105,21 @@ class PostController extends BaseController {
 			'Content-Type' => 'application/rss+xml; charset=UTF-8',
 		]);
 	}
+
+	/**
+	 * Show a post preview.
+	 *
+	 * @param int $id
+	 *
+	 * @return Response
+	 */
+	public function preview($id)
+	{
+		if (Auth::guest())
+		{
+			return App::abort(404, 'Page not found');
+		}
+
+		return View::make($this->theme.'.preview', array('id' => $id));
+	}
 }

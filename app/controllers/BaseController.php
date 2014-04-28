@@ -18,7 +18,7 @@ class BaseController extends Controller {
 
 	public function __construct()
 	{
-		$this->theme = "themes/". Config::get('wardrobe.theme', 'default');
+		$this->theme = Config::get('wardrobe.theme', 'default');
 
 		$this->per_page = Config::get('wardrobe.per_page', 10);
 	}

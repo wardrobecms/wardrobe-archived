@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title>@yield('title')</title>
 		<link href='//fonts.googleapis.com/css?family=OFL+Sorts+Mill+Goudy+TT' rel='stylesheet' type='text/css'/>
-		<link href="{{ asset(theme_path('css/style.css')) }}" rel="stylesheet" media="screen">
+		<link href="{{ asset('themes/default/css/style.css') }}" rel="stylesheet" media="screen">
 	</head>
 	<body>
 		<div class="container">

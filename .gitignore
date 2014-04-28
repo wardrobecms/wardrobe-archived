@@ -1,4 +1,6 @@
 /bootstrap/compiled.php
+/assets/src
+/assets/vendor/components/*/
 /vendor
 /wordkbench
 composer.phar
@@ -6,4 +8,5 @@ composer.lock
 .DS_Store
 .idea
 Thumbs.db
+/public/packages
 _ide_helper.php

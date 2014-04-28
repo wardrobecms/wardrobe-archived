@@ -1,4 +1,4 @@
-@extends(theme_view('layout'))
+@extends('themes.default.layout')
 
 @section('title')
 	Post Preview

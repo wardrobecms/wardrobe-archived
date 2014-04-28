@@ -6,3 +6,4 @@ Route::get('search', array('uses' => 'PostController@getSearch', 'as' => 'search
 Route::get('tag/{tag}', array('uses' => 'PostController@getTag', 'as' => 'tag'));
 Route::get('post/{slug}', array('uses' => 'PostController@getShow', 'as' => 'post'));
 Route::get('rss', array('uses' => 'PostController@getRss', 'as' => 'rss'));
+Route::get('post/preview/{id}', array('uses' => 'PostController@preview', 'as' => 'preview'));

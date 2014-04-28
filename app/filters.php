@@ -45,6 +45,14 @@ Route::filter('auth.basic', function()
 });
 
 /*
+ * Handle 404 errors
+ */
+App::missing(function($exception)
+{
+	return Response::view(Config::get('wardrobe.theme', 'default').'.404', array(), 404);
+});
+
+/*
 |--------------------------------------------------------------------------
 | Guest Filter
 |--------------------------------------------------------------------------

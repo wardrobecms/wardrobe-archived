@@ -73,20 +73,6 @@ p {
   color: #666;
 }
 
-ul.tags {
-  list-style-type: none;
-  margin: 0 0 10px 0;
-  padding: 0;
-}
-
-ul.tags li {
-  display: inline-block;
-  padding: 3px 5px;
-  background: #efefef;
-  border-radius: 5px;
-  font-size: 12px;
-}
-
 .container {
   margin: 0 auto;
   width: 600px;
@@ -98,19 +84,25 @@ ul.archive {
 }
 ul.archive li {
   list-style-type: none;
-  margin: 0;
   padding: 5px 0;
+  margin: 0;
   text-align: left;
   font-weight: 400;
-  font-size: 22px;
-  line-height: 1.3em;
   color: #666;
+  background: #fff url('../img/archive-spacer.png') repeat-x center left;
 }
 ul.archive li span {
   float: right;
   font-size: 14px;
   padding-left: 10px;
   color: #ccc;
+  background: white;
+}
+ul.archive li strong {
+  font-size: 16px;
+  background: white;
+  padding-right: 10px;
+  font-weight: normal;
 }
 
 .post {
@@ -121,6 +113,17 @@ ul.archive li span {
 }
 .post blockquote {
   font-style: italic;
+}
+
+.post:after {
+  display: block;
+  content: ' ';
+  height: 1px;
+  background-color: #bdc3c7;
+  background: -moz-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: -webkit-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: -ms-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
 }
 .post h1 {
   margin-bottom: 0;
@@ -133,9 +136,6 @@ ul.archive li span {
   padding-left: 10px;
   color: #ccc;
   margin-bottom: 20px;
-}
-.next {
-    float: right;
 }
 .pagination {
   text-align: center;
@@ -319,54 +319,4 @@ pre .chunk {
 
 pre .tex .formula {
   opacity: 0.5;
-}
-
-.content img{
-  width: 100%;
-}
-
-
-@media (max-width : 961px) and (min-width: 600px) {
-  .container{
-    width: 100%;
-  }
-  .post{
-    padding: 0px 30px;
-  }
-  .post p{
-    text-align: left;
-  }
-  nav{
-    width: 100%;
-  }
-}
-
-@media (max-width : 600px) and (min-width: 480px) {
-  .container{
-    width: 100%;
-  }
-  .post{
-    padding: 0 20px;
-  }
-  .post p{
-    text-align: justify;
-  }
-  nav{
-    width: 100%;
-  }
-}
-
-@media (max-width : 480px) {
-  .container{
-    width: 100%;
-  }
-  .post{
-    padding: 0 20px;
-  }
-  .post p{
-    text-align: justify;
-  }
-  nav{
-    width: 100%;
-  }
 }
