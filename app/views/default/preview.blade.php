@@ -1,4 +1,4 @@
-@extends('themes.default.layout')
+@extends(theme_view('layout'))
 
 @section('title')
 	Post Preview
@@ -8,6 +8,7 @@
 
 	<section>
 		<h2 class="title"></h2>
+		<div class="leader-img js-image"></div>
 		<div class="js-content"></div>
 	</section>
 
@@ -19,6 +20,9 @@
 			var initial = $.jStorage.get("post-{{ $id }}");
 			$(".title").html(initial.title);
 			$(".js-content").html(marked(initial.content));
+			if (initial.image) {
+				$(".js-image").html("<img src='/{{ Config::get('wardrobe.image_dir') }}/"+initial.image+"'>");
+			}
 
 			$.jStorage.subscribe("post-{{ $id }}", function(channel, data){
 				$(".title").html(data.title);
