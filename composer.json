@@ -15,7 +15,6 @@
         "wardrobe/cabinet": "dev-master"
     },
     "require-dev": {
-        "barryvdh/laravel-ide-helper": "1.*",
         "fzaninotto/faker": "1.x",
         "mockery/mockery": "0.8.*"
     },
@@ -30,7 +29,8 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "php artisan optimize"
+            "php artisan optimize",
+            "php artisan asset:publish wardrobe/cabinet"
         ],
         "post-update-cmd": [
             "php artisan clear-compiled",

@@ -106,7 +106,7 @@ return array(
 		'Illuminate\Validation\ValidationServiceProvider',
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
-		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+
 		'Wardrobe\Cabinet\CabinetServiceProvider',
 
 	),
