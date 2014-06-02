@@ -11,7 +11,7 @@
     "keywords": ["blog", "cms", "laravel", "wardrobe"],
     "license": "MIT",
     "require": {
-        "laravel/framework": "4.1.*",
+        "laravel/framework": "4.2.*",
         "wardrobe/cabinet": "dev-master"
     },
     "require-dev": {
@@ -44,5 +44,5 @@
     "config": {
         "preferred-install": "dist"
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }

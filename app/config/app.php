@@ -56,6 +56,19 @@ return array(
 
 	/*
 	|--------------------------------------------------------------------------
+	| Application Fallback Locale
+	|--------------------------------------------------------------------------
+	|
+	| The fallback locale determines the locale to use when the current one
+	| is not available. You may change the value to correspond to any of
+	| the language folders that are provided through your application.
+	|
+	*/
+
+	'fallback_locale' => 'en',
+
+	/*
+	|--------------------------------------------------------------------------
 	| Encryption Key
 	|--------------------------------------------------------------------------
 	|
@@ -66,6 +79,8 @@ return array(
 	*/
 
 	'key' => 'DPtet9EJRGCnK40FPXduWSGOOTFoSCdb',
+
+	'cipher' => MCRYPT_RIJNDAEL_256,
 
 	/*
 	|--------------------------------------------------------------------------
