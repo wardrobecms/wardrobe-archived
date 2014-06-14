@@ -25,5 +25,6 @@
 				<p>Powered by <a href="http://wardrobecms.com">Wardrobe</a></p>
 			</footer>
 		</div>
+		@yield('footerjs')
 	</body>
 </html>
