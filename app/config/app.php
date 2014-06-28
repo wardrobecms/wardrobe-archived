@@ -123,6 +123,7 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		'Wardrobe\Cabinet\CabinetServiceProvider',
+		'Cviebrock\EloquentSluggable\SluggableServiceProvider',
 
 	),
 
