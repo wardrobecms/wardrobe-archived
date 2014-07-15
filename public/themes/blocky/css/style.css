@@ -1,0 +1,154 @@
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #222222;
+  background: #F9F9FA;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 700;
+}
+
+a {
+  color: #5EAB99;
+  text-decoration: none;
+}
+a:hover {
+  color: #5EAB99;
+}
+
+header {
+  text-align: center;
+}
+header h1 a {
+  color: #666;
+  text-decoration: none;
+}
+header h1 a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+nav {
+  border-top: 1px solid #ccc;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+nav li a {
+  color: #bdc3c7;
+}
+
+
+h2.title {
+  color: #232323;
+  margin: 30px 0;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.1em;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6em;
+  color: #666;
+}
+
+.container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+ul.archive {
+  margin: 0;
+  padding: 0;
+}
+ul.archive li {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3em;
+  color: #666;
+}
+ul.archive li span {
+  float: right;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #ccc;
+}
+
+.post {
+  margin-top: 40px;
+  padding: 0 20px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 6px #ccc;
+}
+.post p {
+  text-align: justify;
+}
+.post blockquote {
+  font-style: italic;
+}
+
+.post h1 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 32px;
+}
+.post .date {
+  font-size: 14px;
+  text-align: center;
+  padding-left: 10px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.post ul.tags {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.post ul.tags li {
+  display: inline-block;
+  padding: 3px 5px;
+  background: #ebebeb;
+  border-radius: 5px;
+  font-size: 12px;
+}
+.pagination {
+  text-align: center;
+}
+.pagination ul {
+  list-style-type: none;
+}
+.pagination li {
+  padding: 5px;
+  display: inline-block;
+}
+
+footer {
+  border-top: 1px solid #bdc3c7;
+  margin-top: 20px;
+}
+footer p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}

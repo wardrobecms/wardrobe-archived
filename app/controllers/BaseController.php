@@ -3,6 +3,33 @@
 class BaseController extends Controller {
 
 	/**
+	 * The default theme used by the blog.
+	 *
+	 * @var string
+	 */
+	protected $theme;
+
+	/**
+	 * The posts per page
+	 *
+	 * @var int
+	 */
+	protected $per_page;
+
+	public function __construct()
+	{
+		if (Config::get("wardrobe.installed") !== true)
+		{
+			header('Location: install');
+			exit;
+		}
+
+		$this->theme = Config::get('wardrobe.theme', 'default');
+
+		$this->per_page = Config::get('wardrobe.per_page', 10);
+	}
+
+	/**
 	 * Setup the layout used by the controller.
 	 *
 	 * @return void

@@ -1,23 +1,40 @@
 <?php
 
+use Wardrobe\Cabinet\Repositories\PostRepositoryInterface;
+
 class HomeController extends BaseController {
 
-	/*
-	|--------------------------------------------------------------------------
-	| Default Home Controller
-	|--------------------------------------------------------------------------
-	|
-	| You may wish to use controllers instead of, or in addition to, Closure
-	| based routes. That's great! Here is an example controller method to
-	| get you started. To route to this controller, just add the route:
-	|
-	|	Route::get('/', 'HomeController@showWelcome');
-	|
-	*/
 
-	public function showWelcome()
+	/**
+	 * The post repository implementation.
+	 *
+	 * @var Wardrobe\PostRepositoryInterface
+	 */
+	protected $posts;
+
+	/**
+	 * Create a new Home controller instance.
+	 *
+	 * @param PostRepositoryInterface $posts
+	 *
+	 * @return HomeController
+	 */
+	public function __construct(PostRepositoryInterface $posts)
 	{
-		return View::make('hello');
+		parent::__construct();
+
+		$this->posts = $posts;
 	}
 
+	/**
+	 * Get the Wardrobe index.
+	 *
+	 * @return Response
+	 */
+	public function getIndex()
+	{
+		$posts = $this->posts->active($this->per_page);
+
+		return View::make($this->theme.'.index', compact('posts'));
+	}
 }

@@ -1,0 +1,369 @@
+@import url(//fonts.googleapis.com/css?family=Crimson+Text:400,600,400italic);
+
+body {
+  font-family: "Crimson Text", "Times New Roman", Georgia, serif;
+  color: #222222;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family:'OFL Sorts Mill Goudy TT', Georgia, serif;
+  font-weight: 300;
+}
+
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+}
+a:hover {
+  color: #2795b6;
+}
+
+header {
+  text-align: center;
+}
+header h1 a {
+  color: #666;
+  text-decoration: none;
+}
+header h1 a:hover {
+  color: #555;
+  text-decoration: none;
+}
+
+nav:before, nav:after {
+  display: block;
+  content: ' ';
+  height: 1px;
+  background-color: #bdc3c7;
+  background: -moz-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: -webkit-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: -ms-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+}
+nav li {
+  display: inline-block;
+  margin-right: 10px;
+}
+nav li a {
+  color: #ccc;
+}
+
+
+h2.title {
+  color: #232323;
+  margin: 30px 0;
+  font-size: 48px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.1em;
+  letter-spacing: -1px;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3em;
+  color: #666;
+}
+
+ul.tags {
+  list-style-type: none;
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+
+ul.tags li {
+  display: inline-block;
+  padding: 3px 5px;
+  background: #efefef;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.container {
+  margin: 0 auto;
+  width: 600px;
+}
+
+ul.archive {
+  margin: 0;
+  padding: 0;
+}
+ul.archive li {
+  list-style-type: none;
+  margin: 0;
+  padding: 5px 0;
+  text-align: left;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.3em;
+  color: #666;
+}
+ul.archive li span {
+  float: right;
+  font-size: 14px;
+  padding-left: 10px;
+  color: #ccc;
+}
+
+.post {
+  margin-top: 40px;
+}
+.post p {
+  text-align: justify;
+}
+.post blockquote {
+  font-style: italic;
+}
+.post h1 {
+  margin-bottom: 0;
+  text-align: center;
+  font-size: 32px;
+}
+.post .date {
+  font-size: 14px;
+  text-align: center;
+  padding-left: 10px;
+  color: #ccc;
+  margin-bottom: 20px;
+}
+.pagination {
+  text-align: center;
+}
+.pagination ul {
+  list-style-type: none;
+}
+.pagination li {
+  padding: 5px;
+  display: inline-block;
+}
+
+footer:before {
+  display: block;
+  content: ' ';
+  height: 1px;
+  background-color: #bdc3c7;
+  background: -moz-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: -webkit-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: -ms-linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+  background: linear-gradient(45deg, #f9f9f9, #bdc3c7, #f9f9f9);
+}
+footer {
+  margin-top: 20px;
+}
+footer p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+/*
+CODE STYLES
+*/
+
+pre code {
+  display: block;
+  padding: .5em;
+  color: #000;
+  background: #f8f8ff;
+  font-family: Inconsolata,Monaco,"Lucida Console",monospace;
+  font-size: 13px;
+  line-height: 23px;
+  margin: 0;
+  white-space: pre;
+}
+pre {
+  border: 1px solid #d0d0d0;
+  color: #002166;
+  display: block;
+  margin: 14px 0 14px 0;
+  padding: 0;
+  background: none repeat scroll 0 0 #EEE;
+  border: 1px solid #DDD;
+  clear: both;
+  overflow: auto;
+}
+
+pre code {
+  display: block; padding: 0.5em;
+  color: #000;
+  background: #f8f8ff
+}
+
+pre .comment,
+pre .template_comment,
+pre .diff .header,
+pre .javadoc {
+  color: #998;
+  font-style: italic
+}
+
+pre .keyword,
+pre .css .rule .keyword,
+pre .winutils,
+pre .javascript .title,
+pre .lisp .title,
+pre .subst,
+pre .request,
+pre .status {
+  color: #000;
+  font-weight: bold
+}
+
+pre .number,
+pre .hexcolor {
+  color: #40a070
+}
+
+pre .string,
+pre .tag .value,
+pre .phpdoc,
+pre .tex .formula {
+  color: #d14
+}
+
+pre .title,
+pre .id {
+  color: #900;
+  font-weight: bold
+}
+
+pre .javascript .title,
+pre .lisp .title,
+pre .subst {
+  font-weight: normal
+}
+
+pre .class .title,
+pre .haskell .type,
+pre .vhdl .literal,
+pre .tex .command {
+  color: #458;
+  font-weight: bold
+}
+
+pre .tag,
+pre .tag .title,
+pre .rules .property,
+pre .django .tag .keyword {
+  color: #000080;
+  font-weight: normal
+}
+
+pre .attribute,
+pre .variable,
+pre .instancevar,
+pre .lisp .body {
+  color: #008080
+}
+
+pre .regexp {
+  color: #009926
+}
+
+pre .class {
+  color: #458;
+  font-weight: bold
+}
+
+pre .symbol,
+pre .ruby .symbol .string,
+pre .ruby .symbol .keyword,
+pre .ruby .symbol .keymethods,
+pre .lisp .keyword,
+pre .tex .special,
+pre .input_number {
+  color: #990073
+}
+
+pre .builtin,
+pre .built_in,
+pre .lisp .title {
+  color: #0086b3
+}
+
+pre .preprocessor,
+pre .pi,
+pre .doctype,
+pre .shebang,
+pre .cdata {
+  color: #999;
+  font-weight: bold
+}
+
+pre .deletion {
+  background: #fdd
+}
+
+pre .addition {
+  background: #dfd
+}
+
+pre .diff .change {
+  background: #0086b3
+}
+
+pre .chunk {
+  color: #aaa
+}
+
+pre .tex .formula {
+  opacity: 0.5;
+}
+
+.content img{
+  width: 100%;
+}
+
+
+@media (max-width : 961px) and (min-width: 600px) {
+  .container{
+    width: 100%;
+  }
+  .post{
+    padding: 0px 30px;
+  }
+  .post p{
+    text-align: left;
+  }
+  nav{
+    width: 100%;
+  }
+}
+
+@media (max-width : 600px) and (min-width: 480px) {
+  .container{
+    width: 100%;
+  }
+  .post{
+    padding: 0 20px;
+  }
+  .post p{
+    text-align: justify;
+  }
+  nav{
+    width: 100%;
+  }
+}
+
+@media (max-width : 480px) {
+  .container{
+    width: 100%;
+  }
+  .post{
+    padding: 0 20px;
+  }
+  .post p{
+    text-align: justify;
+  }
+  nav{
+    width: 100%;
+  }
+}
