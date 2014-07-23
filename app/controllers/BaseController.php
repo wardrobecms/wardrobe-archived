@@ -20,8 +20,7 @@ class BaseController extends Controller {
 	{
 		if (Config::get("wardrobe.installed") !== true)
 		{
-			header('Location: install');
-			exit;
+			return Redirect::to('install');
 		}
 
 		$this->theme = Config::get('wardrobe.theme', 'default');
